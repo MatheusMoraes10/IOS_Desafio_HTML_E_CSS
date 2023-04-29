@@ -5,6 +5,6 @@ Integrantes: Mateus Tavares, Milena Stephany, Wellington Rodrigues, Matheus dos 
 
 Tema: Inscrição para uma empresa.
 
-Objetivo do projeto: 
+Objetivo do projeto: Nossa objetivo é que todos consiga desenvolver tudo que aprendeu até aqui no curso, ouvindo a 
 
 Sobre o projeto:
