@@ -6,20 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="Imagens/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Delicious+Handrawn&family=Edu+NSW+ACT+Foundation:wght@600&family=Farsan&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="..//desafio/style.css">
     <title>Desafio HTML e CSS</title>
 </head>
 
 <body>
+
+    <header>
+        <figure>
+            <img src="Imagens/Logo1Transparente.png" alt="Logo MsW">
+        </figure>
+    </header>
+
     <main>
-        <header>
-            <figure>
-                <img src="Imagens/Logo1Transparente.png" alt="Logo MsW">
-            </figure>
-            <h1>Trabalhe na MsW</h1>
-            <h2>Formulário de Inscrição</h2>
-        </header>
-        <form action="#" method="post">
+
+        <section>
+            <div class="font">
+                <h1>FaÃ§a parte da equipe MSW</h1>
+            </div>
+        </section>
+
+        <form action="#" method="post" class="login">
+            <h2>FormulÃ¡rio de InscriÃ§Ã£o</h2>
             <fieldset>
                 <legend>Dados Pessoais</legend>
                 <p>
@@ -49,7 +65,7 @@
 
                 <p>
                     <label for="icivil">Estado Civil:</label>
-                    
+
                     <input type="radio" name="civil" id="casado">
                     <label for="casado">Casado&#40;a&#41;</label>
 
@@ -57,24 +73,26 @@
                     <label for="solteiro">Solteiro&#40;a&#41;</label>
 
                     <input type="radio" name="civil" id="viuvo">
-                    <label for="viuvo">Viúvo&#40;a&#41;</label>
+                    <label for="viuvo">ViÃºvo&#40;a&#41;</label>
                 </p>
 
                 <p>
                     <label for="itelefone">Telefone Celular:</label>
-                    <input type="tel" name="telefone" id="itelefone" required placeholder="(00) 00000-0000" autocomplete="tel">
+                    <input type="tel" name="telefone" id="itelefone" required placeholder="(00) 00000-0000"
+                        autocomplete="tel">
                 </p>
 
                 <p>
                     <label for="iemail">Email:</label>
-                    <input type="email" name="email" id="iemail" required placeholder="exemplo@exemplo.com" autocomplete="email" required>
+                    <input type="email" name="email" id="iemail" required placeholder="exemplo@exemplo.com"
+                        autocomplete="email" required>
                 </p>
             </fieldset>
 
             <fieldset>
-                <legend>Endereço</legend>
+                <legend>EndereÃ§o</legend>
                 <p>
-                    <label for="iendereco">Endereço:</label>
+                    <label for="iendereco">EndereÃ§o:</label>
                     <input type="text" name="endereco" id="iendereco" placeholder="Rua">
                 </p>
 
@@ -90,20 +108,21 @@
 
                 <p>
                     <label for="icep">CEP:</label>
-                    <input type="number" name="cep" id="icep" min="0" maxlength="8" placeholder="00000-000 &#40;Números Apenas&#41;">
+                    <input type="number" name="cep" id="icep" min="0" maxlength="8"
+                        placeholder="00000-000 &#40;NÃºmeros Apenas&#41;">
                 </p>
             </fieldset>
 
             <fieldset>
-                <legend>Experiência acadêmica</legend>
+                <legend>ExperiÃªncia acadÃªmica</legend>
                 <p>
                     <label for="iescolaridade">Escolaridade:</label>
-                    
+
                     <input type="radio" name="escolaridade" id="fundamental">
                     <label for="fundamental">Ensino fundamental</label>
 
                     <input type="radio" name="escolaridade" id="medio">
-                    <label for="medio">Ensino médio</label>
+                    <label for="medio">Ensino mÃ©dio</label>
 
                     <input type="radio" name="escolaridade" id="superiorinc">
                     <label for="superiorinc">Superior incompleto</label>
@@ -113,10 +132,10 @@
                 </p>
 
                 <p>
-                    <label for="iintituicao">Nome da instituição de ensino:</label>
+                    <label for="iintituicao">Nome da instituiÃ§Ã£o de ensino:</label>
                     <input type="text" name="instituicao" id="iinstituicao">
 
-                    <label for="itermino">Ano de término ou estimativa:</label>
+                    <label for="itermino">Ano de tÃ©rmino ou estimativa:</label>
                     <input type="number" name="termino" id="itermino" min="0" maxlength="4" placeholder="1910">
                 </p>
 
@@ -124,7 +143,7 @@
                     <label for="iintituicao">Ultimo curso complementar realizado:</label>
                     <input type="checkbox" name="instituicao" id="iinstituicao">
 
-                    <label for="itermino">Ano de término ou estimativa:</label>
+                    <label for="itermino">Ano de tÃ©rmino ou estimativa:</label>
                     <input type="number" name="termino" id="itermino" min="0" maxlength="4" placeholder="1910">
                 </p>
             </fieldset>
@@ -149,7 +168,7 @@
                     <label for="svaga">Amigo&#40;a&#41;</label>
 
                     <input type="checkbox" name="vaga" id="svaga2">
-                    <label for="svaga2">Anúncio da Internet</label>
+                    <label for="svaga2">AnÃºncio da Internet</label>
 
                     <input type="checkbox" name="vaga" id="svaga3">
                     <label for="svaga3">Linkedin</label>
@@ -161,26 +180,26 @@
                 </p>
 
                 <p>
-                <label for="ilink">Endereço Url Linkedin:</label>
-                <input type="url" name="link" id="ilink" placeholder="https://br.linkedin.com/Exemplo" required>
+                    <label for="ilink">EndereÃ§o Url Linkedin:</label>
+                    <input type="url" name="link" id="ilink" placeholder="https://br.linkedin.com/Exemplo" required>
                 </p>
             </fieldset>
 
             <fieldset>
-                <legend>Experiência profissional</legend>
+                <legend>ExperiÃªncia profissional</legend>
                 <p>
-                    <label for="itrabalho">Está trabalhando?</label>
+                    <label for="itrabalho">EstÃ¡ trabalhando?</label>
 
                     <input type="radio" name="trabalho" id="sim">
                     <label for="sim">Sim</label>
 
                     <input type="radio" name="trabalho" id="nao">
-                    <label for="nao">Não</label>
+                    <label for="nao">NÃ£o</label>
                 </p>
 
                 <p>
-                    <label for="iexp">Ultima ocupação:</label>
-                    <input type="text" name="exp" id="iexp" placeholder="EX: Estagiário de BackEnd" required>
+                    <label for="iexp">Ultima ocupaÃ§Ã£o:</label>
+                    <input type="text" name="exp" id="iexp" placeholder="EX: EstagiÃ¡rio de BackEnd" required>
                 </p>
 
                 <p>
@@ -189,13 +208,13 @@
                 </p>
 
                 <p>
-                    <label for="iexpd">Comente sobre sua experiência no cargo:</label>
+                    <label for="iexpd">Comente sobre sua experiÃªncia no cargo:</label>
                     <br>
-                    <textarea name="" id="iexpd" cols="80" rows="10" required>Descreva sua experiência</textarea>
+                    <textarea name="" id="iexpd" cols="80" rows="10" required>Descreva sua experiÃªncia</textarea>
                 </p>
 
                 <p>
-                    <label for="icurriculo">Envie seu Currículo:</label>
+                    <label for="icurriculo">Envie seu CurrÃ­culo:</label>
                     <input type="file" name="curriculo" id="icurriculo">
                 </p>
             </fieldset>
@@ -205,6 +224,7 @@
                 <input type="submit" value="Enviar">
             </p>
         </form>
+
     </main>
 
     <footer>
