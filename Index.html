@@ -11,102 +11,123 @@
 </head>
 
 <body>
-    <main>
-        <header>
+    <!-- Cabeçalho -->
+    <main class="gd2">
+        <header class="gd">
             <figure>
                 <img src="Imagens/Logo1Transparente.png" alt="Logo MsW">
             </figure>
-            <h1>Trabalhe na MsW</h1>
-            <h2>Formulário de Inscrição</h2>
+            <div class="flx1">
+                <h1>Trabalhe na MsW</h1>
+                <h2>Formulário de Inscrição</h2>
+            </div>
+            <figure class="flx mb">
+                <h1>Fomulário pelo Celular</h1>
+                <img class="ajust" src="Imagens/qrcode.png" alt="qrcode Celular">
+            </figure>
         </header>
+        <!-- Formulário -->
         <form action="#" method="post">
             <fieldset>
-                <legend>Dados Pessoais</legend>
+                <!-- Campo Formulário dados pessoais -->
+                <legend>
+                    <img src="Imagens/personal.png" alt="Dados pessoais">
+                    Dados Pessoais
+                </legend>
                 <p>
-                    <label for="inome">Nome:</label>
-                    <input type="text" name="nome" id="inome" autocomplete="off" required>
+                    <label for="inome">&#10035;Nome:</label>
+                    <input type="text" name="nome" id="inome" autocomplete="off" required class="mb2">
                 </p>
 
                 <p>
-                    <label for="iultimosobrenome">Ultimo Sobrenome:</label>
-                    <input type="text" name="ultimosobrenome" id="iultimosobrenome" autocomplete="off">
+                    <label for="iultimosobrenome">Sobrenome:</label>
+                    <input type="text" name="ultimosobrenome" id="iultimosobrenome" autocomplete="off" class="mb2">
                 </p>
 
                 <p>
                     <label for="inascimento">Data de Nascimento:</label>
-                    <input type="date" name="nascimento" id="inascimento" autocomplete="off">
+                    <input type="date" name="nascimento" id="inascimento" autocomplete="off" class="mb2">
                 </p>
 
                 <p>
                     <label for="isexo">Sexo:</label>
 
                     <input type="radio" name="sexo" id="masc">
-                    <label for="masc">Masculino</label>
+                    <label for="masc"><img src="Imagens/male.png" alt="male">Masculino</label>
 
                     <input type="radio" name="sexo" id="fem">
-                    <label for="fem">Feminino</label>
+                    <label for="fem"> <img src="Imagens/female.png" alt="female"> Feminino</label>
                 </p>
 
                 <p>
-                    <label for="icivil">Estado Civil:</label>
-                    
+                    <label for="icivil">Estado Civil:</label><br>
+
                     <input type="radio" name="civil" id="casado">
-                    <label for="casado">Casado&#40;a&#41;</label>
+                    <label for="casado">Casado&#40;a&#41;</label><br>
 
                     <input type="radio" name="civil" id="solteiro">
-                    <label for="solteiro">Solteiro&#40;a&#41;</label>
+                    <label for="solteiro">Solteiro&#40;a&#41;</label><br>
 
                     <input type="radio" name="civil" id="viuvo">
                     <label for="viuvo">Viúvo&#40;a&#41;</label>
                 </p>
 
                 <p>
-                    <label for="itelefone">Telefone Celular:</label>
-                    <input type="tel" name="telefone" id="itelefone" required placeholder="(00) 00000-0000" autocomplete="tel">
+                    <label for="itelefone">&#10035;Telefone Celular:</label>
+                    <input type="tel" name="telefone" id="itelefone" required placeholder="(00) 00000-0000"
+                        autocomplete="tel" class="mb2">
                 </p>
 
                 <p>
-                    <label for="iemail">Email:</label>
-                    <input type="email" name="email" id="iemail" required placeholder="exemplo@exemplo.com" autocomplete="email" required>
+                    <label for="iemail">&#10035;Email:</label>
+                    <input type="email" name="email" id="iemail" required placeholder="exemplo@exemplo.com"
+                        autocomplete="email" class="mb2">
                 </p>
             </fieldset>
-
+            <!-- Campo formulário Endereço -->
             <fieldset>
-                <legend>Endereço</legend>
+                <legend>
+                    <img src="Imagens/casa.png" alt="Endereço">
+                    Endereço
+                </legend>
                 <p>
                     <label for="iendereco">Endereço:</label>
-                    <input type="text" name="endereco" id="iendereco" placeholder="Rua">
+                    <input type="text" name="endereco" id="iendereco" placeholder="Rua" class="mb2">
                 </p>
 
                 <p>
                     <label for="icidade">Cidade:</label>
-                    <input type="text" name="cidade" id="icidade" placeholder="">
+                    <input type="text" name="cidade" id="icidade" class="mb2" >
                 </p>
 
                 <p>
                     <label for="iestadp">Estado:</label>
-                    <input type="text" name="estado" id="iestado">
+                    <input type="text" name="estado" id="iestado" class="mb2">
                 </p>
 
                 <p>
                     <label for="icep">CEP:</label>
-                    <input type="number" name="cep" id="icep" min="0" maxlength="8" placeholder="00000-000 &#40;Números Apenas&#41;">
+                    <input type="number" name="cep" id="icep" min="0" maxlength="8"
+                        placeholder="00000-000 &#40;Números Apenas&#41;" class="mb2">
                 </p>
             </fieldset>
-
+            <!-- Campo formulário Experiência acadêmica -->
             <fieldset>
-                <legend>Experiência acadêmica</legend>
+                <legend>
+                    <img src="Imagens/diploma.png" alt="">
+                    Experiência acadêmica
+                </legend>
                 <p>
-                    <label for="iescolaridade">Escolaridade:</label>
-                    
+                    <label for="iescolaridade">Escolaridade:</label><br>
+
                     <input type="radio" name="escolaridade" id="fundamental">
-                    <label for="fundamental">Ensino fundamental</label>
+                    <label for="fundamental">Ensino fundamental</label><br>
 
                     <input type="radio" name="escolaridade" id="medio">
-                    <label for="medio">Ensino médio</label>
+                    <label for="medio">Ensino médio</label><br>
 
                     <input type="radio" name="escolaridade" id="superiorinc">
-                    <label for="superiorinc">Superior incompleto</label>
+                    <label for="superiorinc">Superior incompleto</label><br>
 
                     <input type="radio" name="escolaridade" id="superior">
                     <label for="superior">Superior completo</label>
@@ -114,25 +135,28 @@
 
                 <p>
                     <label for="iintituicao">Nome da instituição de ensino:</label>
-                    <input type="text" name="instituicao" id="iinstituicao">
+                    <input type="text" name="instituicao" id="iinstituicao" class="mb2"><br>
 
                     <label for="itermino">Ano de término ou estimativa:</label>
-                    <input type="number" name="termino" id="itermino" min="0" maxlength="4" placeholder="1910">
+                    <input type="number" name="termino" id="itermino" min="0" maxlength="4" placeholder="1910" class="mb2">
                 </p>
 
                 <p>
                     <label for="iintituicao">Ultimo curso complementar realizado:</label>
-                    <input type="checkbox" name="instituicao" id="iinstituicao">
+                    <input type="text" name="instituicao" id="iinstituicao" class="mb2"><br>
 
                     <label for="itermino">Ano de término ou estimativa:</label>
-                    <input type="number" name="termino" id="itermino" min="0" maxlength="4" placeholder="1910">
+                    <input type="number" name="termino" id="itermino" min="0" maxlength="4" placeholder="1910" class="mb2">
                 </p>
             </fieldset>
-
+            <!-- Campo formulário Vaga de interesse -->
             <fieldset>
-                <legend>Vaga de interesse</legend>
+                <legend>
+                    <img src="Imagens/equipe-de-trabalho.png" alt="Vaga interesse">
+                    Vaga de interesse
+                </legend>
                 <p>
-                    <label for="icargo">Cargo</label>
+                    <label for="icargo">&#10035;Cargo</label>
                     <select name="cargo" id="icargo" required>
                         <option value="1">Desenvolvedor Front-end</option>
 
@@ -143,31 +167,34 @@
                 </p>
 
                 <p>
-                    <label for="vaga">Como soube da vaga?</label>
+                    <label for="vaga">Como soube da vaga?</label><br>
 
                     <input type="checkbox" name="vaga" id="svaga">
-                    <label for="svaga">Amigo&#40;a&#41;</label>
+                    <label for="svaga">Amigo&#40;a&#41;</label><br>
 
                     <input type="checkbox" name="vaga" id="svaga2">
-                    <label for="svaga2">Anúncio da Internet</label>
+                    <label for="svaga2">Anúncio da Internet</label><br>
 
                     <input type="checkbox" name="vaga" id="svaga3">
                     <label for="svaga3">Linkedin</label>
                 </p>
 
                 <p>
-                    <label for="igit">Link GitHub:</label>
-                    <input type="url" name="git" id="igit" placeholder="https://github.com/Exemplo" required>
+                    <label for="igit">&#10035;Link GitHub:</label>
+                    <input type="url" name="git" id="igit" placeholder="https://github.com/Exemplo" required class="mb2">
                 </p>
 
                 <p>
-                <label for="ilink">Endereço Url Linkedin:</label>
-                <input type="url" name="link" id="ilink" placeholder="https://br.linkedin.com/Exemplo" required>
+                    <label for="ilink">&#10035;Endereço Url Linkedin:</label>
+                    <input type="url" name="link" id="ilink" placeholder="https://br.linkedin.com/Exemplo" required class="mb2">
                 </p>
             </fieldset>
-
-            <fieldset>
-                <legend>Experiência profissional</legend>
+            <!-- Campo formulário Experiência Profissional -->
+            <fieldset class="fld">
+                <legend>
+                    <img src="Imagens/mala-de-viagem.png" alt="Experiência Profissional">
+                    Experiência profissional
+                </legend>
                 <p>
                     <label for="itrabalho">Está trabalhando?</label>
 
@@ -179,36 +206,37 @@
                 </p>
 
                 <p>
-                    <label for="iexp">Ultima ocupação:</label>
-                    <input type="text" name="exp" id="iexp" placeholder="EX: Estagiário de BackEnd" required>
+                    <label for="iexp">&#10035;Ultima ocupação:</label>
+                    <input type="text" name="exp" id="iexp" placeholder="EX: Estagiário de BackEnd" required class="mb2">
                 </p>
 
                 <p>
-                    <label for="iano">Ano:</label>
-                    <input type="number" name="termino" id="itermino" min="0" maxlength="4" placeholder="1920" required>
+                    <label for="iano">&#10035;Ano:</label>
+                    <input type="number" name="termino" id="itermino" min="0" maxlength="4" placeholder="1920" required class="mb2">
                 </p>
 
                 <p>
-                    <label for="iexpd">Comente sobre sua experiência no cargo:</label>
+                    <label for="iexpd">&#10035;Comente sobre sua experiência no cargo:</label>
                     <br>
                     <textarea name="" id="iexpd" cols="80" rows="10" required>Descreva sua experiência</textarea>
                 </p>
 
                 <p>
                     <label for="icurriculo">Envie seu Currículo:</label>
-                    <input type="file" name="curriculo" id="icurriculo">
+                    <input type="file" name="curriculo" id="icurriculo" class="btn3" class="mb2">
                 </p>
             </fieldset>
-
-            <p>
-                <input type="reset" value="Limpar">
-                <input type="submit" value="Enviar">
+            <!-- Botões -->
+            <p class="btn2">
+                <input type="reset" value="Limpar Formulário" class="btn">
+                <input type="submit" value="Enviar Formulário" class="btn">
             </p>
         </form>
     </main>
 
     <footer>
-        <p>Company MsW &copy;2023&copy;</p>
+        <p>Company MsW &copy;2023</p>
     </footer>
 </body>
+
 </html>
